@@ -9,6 +9,8 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper";
+import Menu from './../Navbar/menu';
+import Footer from './../Footer/footer';
 
 function Home() {
     const [dataHome, setDataHome] = useState({})
@@ -67,48 +69,7 @@ function Home() {
             {
                 console.log(currentIndex)
             }
-            <div className="header">
-                <div className="header-logo">
-                    <img src='src/assets/logo.png' alt='Img' />
-                </div>
-                <ul className="header-menu">
-                    <li>
-                        <p>Thương hiệu</p>
-                        <ul className="sub-menu">
-                            <li><Link to='/test'>Tin tức ARISTINO</Link></li>
-                            <li><Link to='/'>Phong cách ARISTINO</Link></li>
-                            <li><Link to='/'>Báo chí nói về chúng tôi</Link></li>
-                            <li><Link to='/'>Ưu đãi liên kết</Link></li>
-                            <li><Link to='/'>Đôi cách yêu thương</Link></li>
-                            <li><Link to='/'>Tuyển dụng</Link></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>Sản phẩm</p>
-                        <ul className="sub-menu">
-                            <li><Link to='/'>Tin tức ARISTINO</Link></li>
-                            <li><Link to='/'>Phong cách ARISTINO</Link></li>
-                            <li><Link to='/'>Báo chí nói về chúng tôi</Link></li>
-                            <li><Link to='/'>Ưu đãi liên kết</Link></li>
-                            <li><Link to='/'>Đôi cách yêu thương</Link></li>
-                            <li><Link to='/'>Tuyển dụng</Link></li>
-                        </ul>
-                    </li>
-                    <li>Phụ kiện</li>
-                    <li>Bộ sưu tập</li>
-                    <li>Cửa hàng</li>
-                    <li>3D Shopping</li>
-                    <li>OUTLET STORE</li>
-                </ul>
-                <div className="header-sreach-cart">
-                    <input type="text" name="sreach" placeholder="Tìm kiếm" />
-                    <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                        </svg>
-                    </p>
-                </div>
-            </div>
+           
             <div className='banner'>
                 <div className="h-[780px] w-full m-auto pb-16 relative">
                     <div style={{ backgroundImage: `url(${imgbanner[currentIndex].img})` }} className="w-full h-full bg-center bg-cover duration-500"></div>
@@ -123,8 +84,9 @@ function Home() {
             <div className='product-hot'>
                 <h3>DANH MỤC NỔI BẬT</h3>
                 <Swiper
-
-                    centeredSlides={true}
+                    pagination={{
+                        type: "progressbar",
+                    }}
                     slidesPerGroupSkip={1}
                     grabCursor={true}
                     keyboard={{
@@ -136,7 +98,6 @@ function Home() {
                             slidesPerGroup: 1,
                         },
                     }}
-                    scrollbar={true}
                     navigation={true}
                     modules={[Keyboard, Scrollbar, Navigation, Pagination]}
                     className="mySwiper"
@@ -172,7 +133,9 @@ function Home() {
             <div className='product-new'>
                 <h3>SẢN PHẨM MỚI</h3>
                 <Swiper
-                    centeredSlides={true}
+                    pagination={{
+                        type: "progressbar",
+                    }}
                     slidesPerGroupSkip={1}
                     grabCursor={true}
                     keyboard={{
@@ -184,19 +147,18 @@ function Home() {
                             slidesPerGroup: 1,
                         },
                     }}
-                    scrollbar={true}
                     navigation={true}
                     modules={[Keyboard, Scrollbar, Navigation, Pagination]}
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <img 
-                        src={imgproductnew[0].img} 
-                        
+                        <img
+                            src={imgproductnew[0].img}
+
                         />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={imgproductnew[0].img} />
+                        <img src={imgproductnew[3].img} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={imgproductnew[1].img} />
@@ -215,64 +177,7 @@ function Home() {
                     </SwiperSlide>
                 </Swiper>
             </div>
-            <div className="footer">
-                <div className='footer-row-1fr'>
-                    <div className='footer-col'>
-                        <div className='footer-col-1fr'>
-                            <h4>VỀ CHÚNG TÔI</h4>
-                            <p>Câu chuyện thương hiệu</p>
-                            <p>Đôi Cánh Yêu Thương</p>
-                            <p>Tin tức</p>
-                            <p>Tuyển dụng</p>
-                            <p>Liên hệ</p>
-                        </div>
-                        <div className='footer-col-1fr'>
-                            <h4>CHÍNH SÁCH BÁN HÀNG</h4>
-                            <p>Chính sách đổi hàng</p>
-                            <p>Chính sách bảo hành</p>
-                            <p>Chính sách hội viên</p>
-                            <p>Chính sách giao nhận</p>
-                            <p>Hướng dẫn mua hàng</p>
-                            <p>Chính sách bảo mật</p>
-                        </div>
-                        <div className='footer-col-1fr'>
-                            <h4>TƯ VẤN</h4>
-                            <p>Tư vấn phong cách</p>
-                            <p>Tư vấn chọn size</p>
-                            <p>Hỏi đáp</p>
-
-                        </div>
-                        <div className='footer-col-1fr'>
-                            <h4>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h4>
-                            <div className='register'>
-                                <input type='text' placeholder='Nhập email của bạn' />
-                                <button>Đăng ký</button>
-                            </div>
-                            <p>Kết nối với chúng tôi</p>
-                            <div className='link flex'>
-                                <p>fb</p>
-                                <p>tw</p>
-                                <p>ig</p>
-                                <p>p</p>
-                                <p>yt</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='footer-row-1fr'>
-                    <div className='footer-col'>
-                        <div className='footer-col-1fr'>
-                            <p>CÔNG TY CỔ PHẦN ĐẦU TƯ K&G VIỆT NAM</p>
-                            <p>Trụ sở chính: Tầng 11 khối A, tòa nhà Sông Đà, đường Phạm Hùng, Phường Mỹ Đình 1, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt Nam</p>
-                            <p>Giấy chứng nhận Đăng ký Kinh doanh số 0105911105 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 08/06/2012 và sửa đổi lần thứ 10 ngày 05/05/2022</p>
-                        </div>
-                        <div className='footer-col-1fr'>
-                            <p>Phương thức thanh toán</p>
-                            <img src='src/assets/payment.png' alt='img'/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     );
 }
