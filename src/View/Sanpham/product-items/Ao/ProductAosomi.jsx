@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import '../style.scss'
 function ProductAosomi(props) {
     const { dataAosomi } = props
+    console.log(dataAosomi)
     return (
         <>
             <div className="breadcrumb">

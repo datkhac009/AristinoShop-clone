@@ -12,9 +12,9 @@ function Product() {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await axios.get(`http://localhost:2002/Product_Ao`);
-            setDataAllAo(response.data)
-            console.log(dataAllAo)
+            const response = await axios.get(`http://localhost:2002/Ao_somi_Detail`);
+            console.log(response)
+            setDataAllAo(response)
             setLoading(true)
         }
         fetchData();

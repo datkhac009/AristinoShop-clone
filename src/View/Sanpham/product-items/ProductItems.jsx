@@ -4,7 +4,7 @@ function ProductItems(props) {
     console.log(props)
     return (
         <>   
-            <ProductAosomi dataAosomi={props.dataAllAos.Ao_somi}/>
+            <ProductAosomi dataAosomi={props.dataAllAos.data}/>
         </>
     );
 }

@@ -19,7 +19,6 @@ function Home() {
     const [imgproducthot, setImgproducthot] = useState({})
     const [imgproductnew, setImgproductnew] = useState({})
     const [currentIndex, setCurrentIndex] = useState(0)
-    const [hovered, setHovered] = useState(false);
     useEffect(() => {
         async function fetchData() {
             const response = await axios.get(`http://localhost:2002/Homepage`);
