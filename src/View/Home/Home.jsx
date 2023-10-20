@@ -64,12 +64,12 @@ function Home() {
     }
     return (
 
-        <div className="wrapper">
+        <div className="wrapper ">
             {
                 console.log(currentIndex)
             }
            
-            <div className='banner'>
+            <div className='banner max-[600px]:h-[600px]'>
                 <div className="h-[780px] w-full m-auto pb-16 relative">
                     <div style={{ backgroundImage: `url(${imgbanner[currentIndex].img})` }} className="w-full h-full bg-center bg-cover duration-500"></div>
                 </div>
@@ -80,7 +80,7 @@ function Home() {
                     <Icon icon="tabler:chevron-left" onClick={prevGiam} className='icon-giam' />
                 </div>
             </div>
-            <div className='product-hot'>
+            <div className='product-hot max-[600px]:mb-10'>
                 <h3>DANH MỤC NỔI BẬT</h3>
                 <Swiper
                     pagination={{
@@ -99,7 +99,7 @@ function Home() {
                     }}
                     navigation={true}
                     modules={[Keyboard, Scrollbar, Navigation, Pagination]}
-                    className="mySwiper"
+                    className="mySwiper max-[600px]:w-[300px]"
                 >
                     <SwiperSlide>
                         <img src={imgproducthot[0].img} />
@@ -129,7 +129,7 @@ function Home() {
                     <div style={{ backgroundImage: `url(${imgbanner[2].img})` }} className="w-full h-full  bg-center bg-cover duration-500"></div>
                 </div>
             </div>
-            <div className='product-new'>
+            <div className='product-new max-[600px]:mb-10'>
                 <h3>SẢN PHẨM MỚI</h3>
                 <Swiper
                     pagination={{
@@ -148,7 +148,7 @@ function Home() {
                     }}
                     navigation={true}
                     modules={[Keyboard, Scrollbar, Navigation, Pagination]}
-                    className="mySwiper"
+                    className="mySwiper max-[600px]:w-[300px]"
                 >
                     <SwiperSlide>
                         <img

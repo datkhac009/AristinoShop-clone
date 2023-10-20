@@ -313,7 +313,7 @@
         "Ao_somi_Detail":[
             {
                 "id": 1,
-                "img": "src/assets/img-aosomi/somi_1.jpg",
+                "img": "/imgaosomi/somi1.jpg",
                 "name": "Áo sơ mi dài tay Aristino ALS22502",
                 "price": "850000",
                 "product_information":
@@ -327,7 +327,7 @@
             },
             {
                 "id": 2,
-                "img": "src/assets/img-aosomi/somi_2.jpg",
+                "img": "/imgaosomi/somi_2.jpg",
                 "name": "Áo sơ mi nam dài tay Aristino ALS01103",
                 "price": "950000",
                 "product_information":
@@ -340,7 +340,7 @@
             },
             {
                 "id": 3,
-                "img": "src/assets/img-aosomi/somi_3.jpg",
+                "img": "/imgaosomi/somi_3.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "850000",
                 "product_information":
@@ -353,7 +353,7 @@
             },
             {
                 "id": 4,
-                "img": "src/assets/img-aosomi/somi_4.jpg",
+                "img": "/imgaosomi/somi_4.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "660000",
                 "product_information":
@@ -366,7 +366,7 @@
             },
             {
                 "id": 5,
-                "img": "src/assets/img-aosomi/somi_5.jpg",
+                "img": "/imgaosomi/somi_5.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "950000",
                 "product_information":
@@ -379,7 +379,7 @@
             },
             {
                 "id": 6,
-                "img": "src/assets/img-aosomi/somi_6.jpg",
+                "img": "/imgaosomi/somi_6.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "350000",
                 "product_information":
@@ -392,7 +392,7 @@
             },
             {
                 "id": 7,
-                "img": "src/assets/img-aosomi/somi_7.jpg",
+                "img": "/imgaosomi/somi_7.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "320000",
                 "product_information":
@@ -405,7 +405,7 @@
             },
             {
                 "id": 8,
-                "img": "src/assets/img-aosomi/somi_8.jpg",
+                "img": "/imgaosomi/somi_8.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "650000",
                 "product_information":
@@ -418,7 +418,7 @@
             },
             {
                 "id": 9,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_9.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -431,7 +431,7 @@
             },
             {
                 "id": 10,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_2.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -444,7 +444,7 @@
             },
             {
                 "id": 11,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_3.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -457,7 +457,7 @@
             },
             {
                 "id": 12,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_5.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -470,7 +470,7 @@
             },
             {
                 "id": 13,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_6.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -483,7 +483,7 @@
             },
             {
                 "id": 14,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_5.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -496,7 +496,7 @@
             },
             {
                 "id": 15,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_2.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -509,7 +509,7 @@
             },
             {
                 "id": 16,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_2.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -522,7 +522,7 @@
             },
             {
                 "id": 17,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_2.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":
@@ -535,7 +535,7 @@
             },
             {
                 "id": 18,
-                "img": "src/assets/img-aosomi/somi_9.jpg",
+                "img": "/imgaosomi/somi_2.jpg",
                 "name": "Áo sơ mi ngắn tay Aristino ASS110S3",
                 "price": "460000",
                 "product_information":

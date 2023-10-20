@@ -10,7 +10,7 @@ function Mainlayout() {
     return (
         <div>
             <BrowserRouter>
-                <div className="header">
+                <div className="header  max-[600px]:text-center">
                     <Menu />
                 </div>
                 <Routes>
@@ -19,7 +19,7 @@ function Mainlayout() {
                     <Route path='/sanpham/:id' element={<ProductAoID />} />
                     {/* <Route path='/test' element={<Test/>}/> */}
                 </Routes>
-                <div className="footer">
+                <div className="footer max-[600px]:p-0">
                     <Footer />
                 </div>
             </BrowserRouter>

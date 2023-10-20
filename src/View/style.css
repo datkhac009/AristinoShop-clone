@@ -16,7 +16,7 @@
 .header .header-menu{
     width: 700px;
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 
@@ -138,7 +138,7 @@
     display: block;
     width: 290px;
     height: 380px;
-    object-fit: cover;
+    object-fit: contain;
 
   }
   @media only screen and (min-width: 769px) {
